@@ -12,4 +12,5 @@ package scrumprojekt;
 public class hej {
     private int siffror;
     private String abc;
+    private String[] list;
 }
