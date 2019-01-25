@@ -17,4 +17,10 @@ public class hej {
     private String abc;
     private String[] list;
     private String[] list2;
+    //idioter
+
+public hej() {
+    siffror = 123;
 }
+}
+
