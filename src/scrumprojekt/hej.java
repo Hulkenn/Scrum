@@ -28,6 +28,9 @@ public class hej {
     
     public static void endMyLife(int x) {
         //kappa123
+    //idioter
+    private int lucas;
+    //dra åt helvete
 }
 }
 
