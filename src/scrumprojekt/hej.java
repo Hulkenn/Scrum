@@ -26,4 +26,13 @@ public class Hej {
     public Hej(int x){
         siffror = x;
     }
+    
+    public static void endMyLife(int x) {
+        //kappa123
+    //idioter
+    private int lucas;
+    //dra åt helvete
 }
+}
+
+
