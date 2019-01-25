@@ -10,7 +10,11 @@ package scrumprojekt;
  * @author kevin
  */
 public class hej {
+    //Kevin
     private int siffror;
+    private int kevin;
+    private int lucas;
     private String abc;
     private String[] list;
+    private String[] list2;
 }
