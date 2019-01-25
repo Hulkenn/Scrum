@@ -25,6 +25,10 @@ public class hej {
     public hej(int x){
         siffror = x;
     }
+    
+    public static void endMyLife(int x) {
+        //kappa123
+}
 }
 
 
