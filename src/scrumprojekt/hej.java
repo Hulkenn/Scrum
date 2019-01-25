@@ -12,5 +12,5 @@ package scrumprojekt;
 public class hej {
     //Kevin
     private int siffror;
-    
+    private int kevin;
 }
