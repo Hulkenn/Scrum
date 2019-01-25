@@ -10,5 +10,5 @@ package scrumprojekt;
  * @author kevin
  */
 public class hej {
-    
+    private int siffror;
 }
