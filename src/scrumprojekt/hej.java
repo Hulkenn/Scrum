@@ -17,7 +17,14 @@ public class hej {
     private String abc;
     private String[] list;
     private String[] list2;
-    private int Mood;
+    
+    
+    
+    
+    
+    public hej(int x){
+        siffror = x;
+    }
 }
 
 
