@@ -17,10 +17,7 @@ public class hej {
     private String abc;
     private String[] list;
     private String[] list2;
-    //idioter
+    private int Mood;
+}
 
-public hej() {
-    siffror = 123;
-}
-}
 
