@@ -9,7 +9,7 @@ package scrumprojekt;
  *
  * @author kevin
  */
-public class hej {
+public class Hej {
     //Kevin
     private int siffror;
     private int kevin;
@@ -23,7 +23,7 @@ public class hej {
     
     
     
-    public hej(int x){
+    public Hej(int x){
         siffror = x;
     }
 }
