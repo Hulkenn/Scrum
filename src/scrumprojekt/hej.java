@@ -16,7 +16,8 @@ public class hej {
     private int lucas;
     private String abc;
     private String[] list;
-    private String[] list2;
+    private String[] list2; 
+    private int jocke;
     
     
     
