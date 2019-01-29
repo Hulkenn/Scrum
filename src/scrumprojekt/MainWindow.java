@@ -29,16 +29,16 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        panelHeader = new javax.swing.JPanel();
+        panelOpenEducation = new javax.swing.JPanel();
+        labelOpenEducation = new javax.swing.JLabel();
+        panelOpenSocial = new javax.swing.JPanel();
+        labelOpenSocial = new javax.swing.JLabel();
+        panelOpenResearch = new javax.swing.JPanel();
+        labelOpenResearch = new javax.swing.JLabel();
+        labelHome = new javax.swing.JLabel();
+        panelHome = new javax.swing.JPanel();
+        labelWelcome = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(250, 249, 246));
@@ -46,163 +46,200 @@ public class MainWindow extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(1170, 700));
 
-        jPanel1.setBackground(new java.awt.Color(50, 121, 184));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelHeader.setBackground(new java.awt.Color(50, 121, 184));
 
-        jPanel3.setBackground(new java.awt.Color(50, 121, 184));
-        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        panelOpenEducation.setBackground(new java.awt.Color(50, 121, 184));
+        panelOpenEducation.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel3MouseEntered(evt);
+                panelOpenEducationMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel3MouseExited(evt);
+                panelOpenEducationMouseExited(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(250, 249, 246));
-        jLabel1.setText("Education");
+        labelOpenEducation.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        labelOpenEducation.setForeground(new java.awt.Color(250, 249, 246));
+        labelOpenEducation.setText("Education");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelOpenEducationLayout = new javax.swing.GroupLayout(panelOpenEducation);
+        panelOpenEducation.setLayout(panelOpenEducationLayout);
+        panelOpenEducationLayout.setHorizontalGroup(
+            panelOpenEducationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOpenEducationLayout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addComponent(jLabel1)
+                .addComponent(labelOpenEducation)
                 .addContainerGap(41, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        panelOpenEducationLayout.setVerticalGroup(
+            panelOpenEducationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOpenEducationLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jLabel1)
+                .addComponent(labelOpenEducation)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(51, 13, -1, -1));
-
-        jPanel5.setBackground(new java.awt.Color(50, 121, 184));
-        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        panelOpenSocial.setBackground(new java.awt.Color(50, 121, 184));
+        panelOpenSocial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel5MouseEntered(evt);
+                panelOpenSocialMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel5MouseExited(evt);
+                panelOpenSocialMouseExited(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(250, 249, 246));
-        jLabel3.setText("Social");
+        labelOpenSocial.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        labelOpenSocial.setForeground(new java.awt.Color(250, 249, 246));
+        labelOpenSocial.setText("Social");
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelOpenSocialLayout = new javax.swing.GroupLayout(panelOpenSocial);
+        panelOpenSocial.setLayout(panelOpenSocialLayout);
+        panelOpenSocialLayout.setHorizontalGroup(
+            panelOpenSocialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOpenSocialLayout.createSequentialGroup()
                 .addContainerGap(87, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(labelOpenSocial)
                 .addGap(84, 84, 84))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        panelOpenSocialLayout.setVerticalGroup(
+            panelOpenSocialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOpenSocialLayout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addComponent(jLabel3)
+                .addComponent(labelOpenSocial)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(788, 13, -1, 135));
-
-        jPanel4.setBackground(new java.awt.Color(50, 121, 184));
-        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        panelOpenResearch.setBackground(new java.awt.Color(50, 121, 184));
+        panelOpenResearch.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel4MouseEntered(evt);
+                panelOpenResearchMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel4MouseExited(evt);
+                panelOpenResearchMouseExited(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(250, 249, 246));
-        jLabel2.setText("Research");
+        labelOpenResearch.setFont(new java.awt.Font("Arial", 0, 48)); // NOI18N
+        labelOpenResearch.setForeground(new java.awt.Color(250, 249, 246));
+        labelOpenResearch.setText("Research");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelOpenResearchLayout = new javax.swing.GroupLayout(panelOpenResearch);
+        panelOpenResearch.setLayout(panelOpenResearchLayout);
+        panelOpenResearchLayout.setHorizontalGroup(
+            panelOpenResearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOpenResearchLayout.createSequentialGroup()
                 .addContainerGap(56, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(labelOpenResearch)
                 .addGap(38, 38, 38))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        panelOpenResearchLayout.setVerticalGroup(
+            panelOpenResearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelOpenResearchLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jLabel2)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addComponent(labelOpenResearch)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 13, -1, 135));
+        labelHome.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        labelHome.setForeground(new java.awt.Color(250, 249, 246));
+        labelHome.setText("Home");
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(250, 249, 246));
-        jLabel4.setText("Home");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 10, -1, -1));
+        javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
+        panelHeader.setLayout(panelHeaderLayout);
+        panelHeaderLayout.setHorizontalGroup(
+            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(panelOpenEducation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(panelOpenResearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(panelOpenSocial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addComponent(labelHome))
+        );
+        panelHeaderLayout.setVerticalGroup(
+            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(panelOpenEducation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(panelOpenResearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(panelOpenSocial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(panelHeaderLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(labelHome))
+        );
 
-        jPanel2.setBackground(new java.awt.Color(250, 249, 246));
-        jPanel2.setPreferredSize(new java.awt.Dimension(1170, 650));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelHome.setBackground(new java.awt.Color(250, 249, 246));
+        panelHome.setPreferredSize(new java.awt.Dimension(1170, 650));
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 48)); // NOI18N
-        jLabel5.setText("Welcome to Örebro University Informatics Portal");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 960, 80));
+        labelWelcome.setFont(new java.awt.Font("Times New Roman", 0, 48)); // NOI18N
+        labelWelcome.setText("Welcome to Örebro University Informatics Portal");
+
+        javax.swing.GroupLayout panelHomeLayout = new javax.swing.GroupLayout(panelHome);
+        panelHome.setLayout(panelHomeLayout);
+        panelHomeLayout.setHorizontalGroup(
+            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHomeLayout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(labelWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(130, 130, 130))
+        );
+        panelHomeLayout.setVerticalGroup(
+            panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelHomeLayout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(labelWelcome, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(440, 440, 440))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(panelHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
-    jPanel3.setBackground(new Color(77, 146, 208));
-    }//GEN-LAST:event_jPanel3MouseEntered
+    private void panelOpenEducationMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelOpenEducationMouseEntered
+    panelOpenEducation.setBackground(new Color(77, 146, 208));
+    }//GEN-LAST:event_panelOpenEducationMouseEntered
 
-    private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
-    jPanel3.setBackground(new Color(50, 121, 184));
-    }//GEN-LAST:event_jPanel3MouseExited
+    private void panelOpenEducationMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelOpenEducationMouseExited
+    panelOpenEducation.setBackground(new Color(50, 121, 184));
+    }//GEN-LAST:event_panelOpenEducationMouseExited
 
-    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-    jPanel4.setBackground(new Color(77, 146, 208));
-    }//GEN-LAST:event_jPanel4MouseEntered
+    private void panelOpenResearchMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelOpenResearchMouseEntered
+    panelOpenResearch.setBackground(new Color(77, 146, 208));
+    }//GEN-LAST:event_panelOpenResearchMouseEntered
 
-    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-    jPanel4.setBackground(new Color(50, 121, 184));
-    }//GEN-LAST:event_jPanel4MouseExited
+    private void panelOpenResearchMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelOpenResearchMouseExited
+    panelOpenResearch.setBackground(new Color(50, 121, 184));
+    }//GEN-LAST:event_panelOpenResearchMouseExited
 
-    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-    jPanel5.setBackground(new Color(77, 146, 208));
-    }//GEN-LAST:event_jPanel5MouseEntered
+    private void panelOpenSocialMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelOpenSocialMouseEntered
+    panelOpenSocial.setBackground(new Color(77, 146, 208));
+    }//GEN-LAST:event_panelOpenSocialMouseEntered
 
-    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-    jPanel5.setBackground(new Color(50, 121, 184));
-    }//GEN-LAST:event_jPanel5MouseExited
+    private void panelOpenSocialMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelOpenSocialMouseExited
+    panelOpenSocial.setBackground(new Color(50, 121, 184));
+    }//GEN-LAST:event_panelOpenSocialMouseExited
 
     /**
      * @param args the command line arguments
@@ -240,15 +277,15 @@ public class MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
+    private javax.swing.JLabel labelHome;
+    private javax.swing.JLabel labelOpenEducation;
+    private javax.swing.JLabel labelOpenResearch;
+    private javax.swing.JLabel labelOpenSocial;
+    private javax.swing.JLabel labelWelcome;
+    private javax.swing.JPanel panelHeader;
+    private javax.swing.JPanel panelHome;
+    private javax.swing.JPanel panelOpenEducation;
+    private javax.swing.JPanel panelOpenResearch;
+    private javax.swing.JPanel panelOpenSocial;
     // End of variables declaration//GEN-END:variables
 }
