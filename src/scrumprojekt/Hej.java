@@ -18,7 +18,7 @@ public class Hej {
     private String[] list;
     private String[] list2; 
     private int jocke;
-    
+    private int haj;
     
     
     
