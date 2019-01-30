@@ -6,6 +6,7 @@
 package scrumprojekt;
 
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 /**
@@ -13,22 +14,38 @@ import javax.swing.JTextField;
  * @author Kasper
  */
 public class Validate {
-    /**
+  /**
      * Method for checking if a JTextField is empty
      *
      * @param windowToCheck
-     * @return
+     * @return returns 1 if its empty, 0 if not empty
      */
     public static boolean textWindowIsEmpty(JTextField windowToCheck) {
-        boolean resultat = true;
+        boolean result = false;
         //If the JTextField checked is empty - do the following
         if (windowToCheck.getText().isEmpty()) {
             //Change the boolean to false
-            resultat = false;
+            result = true;
+            JOptionPane.showMessageDialog(windowToCheck, "It is empty.");
+            windowToCheck.requestFocus();
         }
 
         //Return a boolean
-        return resultat;
+        return result;
+    }
+    /**
+     * 
+     * @param fieldToCheck
+     * @return returns 1 if its empty, 0 if not empty
+     */
+    public static boolean passwordFieldIsEmpty(JPasswordField fieldToCheck) {
+        boolean result = false;
+        if(fieldToCheck.getPassword().length == 0) {
+            result = true;
+            JOptionPane.showMessageDialog(fieldToCheck, "Enter a password.");
+            fieldToCheck.requestFocus();
+        }
+        return result;
     }
     
     /**
@@ -38,7 +55,7 @@ public class Validate {
      * @return
      */
     public static boolean isAnInteger(JTextField windowToCheck) {
-        boolean resultat = true;
+        boolean result = true;
         try {
             //Fetch the input from the textfield
             String inStrang = windowToCheck.getText();
@@ -48,9 +65,9 @@ public class Validate {
             //If the conversion fails, show the user a message telling it to write a number
             JOptionPane.showMessageDialog(null, "Please enter an even number!");
             //Change the boolean to false
-            resultat = false;
+            result = false;
         }
         //Return a boolean
-        return resultat;
+        return result;
     }
 }

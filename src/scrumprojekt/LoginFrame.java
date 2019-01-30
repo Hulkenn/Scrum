@@ -6,18 +6,48 @@
  */
 package scrumprojekt;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import javax.swing.JOptionPane;
+import oru.inf.InfDB;
+import oru.inf.InfException;
+
+
 /**
  *
  * @author Joakim
  */
 public class LoginFrame extends javax.swing.JFrame {
 
+    public static InfDB db;
     /**
      * Creates new form LoginFrame
      */
     public LoginFrame() {
         initComponents();
         this.setLocationRelativeTo(null);
+    }
+    
+    private void login() {
+        if(!Validate.textWindowIsEmpty(tfEmail) && !Validate.passwordFieldIsEmpty(pfPassword)) {
+            System.out.println("Ok");
+            HashMap<String,String> user = DBFetcher.fetchUser(db, tfEmail.getText());
+            if(user == null) {
+                JOptionPane.showMessageDialog(rootPane, "Wrong username or password");
+            } else {
+                char[] correct_password = user.get("PASSWORD").toCharArray();
+                char[] input_password = pfPassword.getPassword();
+                System.out.println(correct_password + " " + input_password);
+                //If the password is correct
+                if(Arrays.equals(input_password, correct_password)) {
+                    //
+                    new MainWindow(db).setVisible(true);
+                    dispose();
+                } else {
+                    JOptionPane.showMessageDialog(rootPane, "Wrong username or password");
+                }
+            }
+        }
     }
 
     /**
@@ -89,6 +119,11 @@ public class LoginFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(250, 249, 246));
 
         jpLogin.setBackground(new java.awt.Color(94, 97, 104));
+        jpLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jpLoginMouseClicked(evt);
+            }
+        });
 
         jLabel3.setBackground(new java.awt.Color(250, 249, 246));
         jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -177,6 +212,10 @@ public class LoginFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pfPasswordActionPerformed
 
+    private void jpLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpLoginMouseClicked
+        login();
+    }//GEN-LAST:event_jpLoginMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -210,6 +249,13 @@ public class LoginFrame extends javax.swing.JFrame {
                 new LoginFrame().setVisible(true);
             }
         });
+        //Tries to connect to database
+        try {
+            db = new InfDB(System.getProperty("user.dir") + "/scrumdb.fdb");
+        }
+        catch(InfException e) {
+            System.out.println("cant connect to db");
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

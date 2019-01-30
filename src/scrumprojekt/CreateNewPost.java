@@ -71,7 +71,7 @@ public class CreateNewPost extends javax.swing.JFrame {
         );
 
         textareaPost.setColumns(20);
-        textareaPost.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        textareaPost.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         textareaPost.setRows(5);
         textareaPost.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane1.setViewportView(textareaPost);

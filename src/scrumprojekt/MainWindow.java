@@ -6,6 +6,7 @@
 package scrumprojekt;
 
 import java.awt.Color;
+import oru.inf.InfDB;
 
 /**
  *
@@ -13,11 +14,13 @@ import java.awt.Color;
  */
 public class MainWindow extends javax.swing.JFrame {
 
+    private InfDB db;
     /**
      * Creates new form MainWindow
      */
-    public MainWindow() {
+    public MainWindow(InfDB db) {
         initComponents();
+        this.db = db;
         this.setLocationRelativeTo(null);
     }
 
@@ -284,11 +287,11 @@ public class MainWindow extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+        /*java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainWindow().setVisible(true);
+                new MainWindow(db).setVisible(true);
             }
-        });
+        });*/
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
