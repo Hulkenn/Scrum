@@ -6,7 +6,7 @@
 package scrumprojekt;
 
 /**
- *
+ *ygh
  * @author Joakim
  */
 public class EducationFrame extends javax.swing.JFrame {
