@@ -68,7 +68,7 @@ public class ResearchFrame extends javax.swing.JFrame {
 
         jLabel25.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(250, 249, 246));
-        jLabel25.setText("Rsearch forum");
+        jLabel25.setText("Research forum");
 
         javax.swing.GroupLayout researchHeaderLayout = new javax.swing.GroupLayout(researchHeader);
         researchHeader.setLayout(researchHeaderLayout);
@@ -77,7 +77,7 @@ public class ResearchFrame extends javax.swing.JFrame {
             .addGroup(researchHeaderLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(jLabel25)
-                .addContainerGap(875, Short.MAX_VALUE))
+                .addContainerGap(855, Short.MAX_VALUE))
         );
         researchHeaderLayout.setVerticalGroup(
             researchHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
