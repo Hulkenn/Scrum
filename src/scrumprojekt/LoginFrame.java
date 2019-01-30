@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -56,8 +57,6 @@ public class LoginFrame extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(700, 400));
 
         jPanel1.setBackground(new java.awt.Color(50, 121, 184));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joakim\\Pictures\\krappa.png")); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         jLabel5.setText("Informatik");
